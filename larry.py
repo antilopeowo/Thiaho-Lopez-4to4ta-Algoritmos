@@ -11,6 +11,9 @@ for t in range(0, len(clima)):
     if clima[t]>aux:
         indice = t+1
         aux=clima[t]
+    if clima[t] < aux:
+        indice = t + 1
+        aux = clima[t]
     if clima[t]>=26:
         print(f"hace calor.{clima[t]}")
     elif clima[t]<=16:
